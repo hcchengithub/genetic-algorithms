@@ -4,7 +4,8 @@ import time
 
 weight_limit = 3000
 
-for i in range(31):
+for i in range(22):
+    # 本來是物品個數是 31 實在太久了，我把它改成 22 還好。
     things = knapsack.generate_things(i)
     start = time.time()
     bruteforce(things, weight_limit)
